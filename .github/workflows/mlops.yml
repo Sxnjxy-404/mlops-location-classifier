@@ -16,4 +16,4 @@ jobs:
       uses: docker/setup-buildx-action@v3
 
     - name: Build Docker image
-      run: docker build -t location-classifier .
+      run: docker build -t location-classifier -f docker/Dockerfile .
